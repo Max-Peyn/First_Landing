@@ -278,3 +278,51 @@ nav a:hover{
     color: #fcc068;
     background: white;
 }
+.textContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+.priceList{
+    padding: 0;
+}
+.hintBlock{
+    width: 50px;
+    height: 50px;
+    background: red;
+    position: fixed;
+    right: 2.5em;
+    bottom: 0;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hintBlock img{
+    width: 40px;
+    height: 40px;
+}
+.hintCloud{
+    width: 300px;
+    height: 200px;
+    background: #fdffd1;
+    border: 1px solid black;
+    border-radius: 20px 20px 0px 20px;
+    position: fixed;
+    right: 90px;
+    bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 1.3em;
+    transform: scale(0);
+    transition: all .2s linear;
+    transform-origin: right bottom;
+}
+.hintBlock:hover + .hintCloud{
+    transform: scale(1);
+}
